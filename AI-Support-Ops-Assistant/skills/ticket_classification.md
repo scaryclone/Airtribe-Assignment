@@ -74,7 +74,7 @@ Return ONLY valid JSON.
   "priority": "",
   "escalation_required": false,
   "assigned_team": "",
-  "reason": ""
+  "reason": ""// max 20 words
 }
 ```
 ## Reason Guidelines
