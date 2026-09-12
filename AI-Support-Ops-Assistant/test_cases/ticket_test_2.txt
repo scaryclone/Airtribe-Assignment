@@ -1,13 +1,4 @@
-Subject: Charged twice for my subscription this month
+Subject: Security breach
 
-Hello,
-
-I noticed that I was charged twice for my monthly subscription on the 5th
-of this month. My bank statement shows two identical charges of $29.99
-within a few minutes of each other. Could you please look into this and
-issue a refund for the duplicate charge?
-
-Order/Invoice numbers: #10234, #10235
-
-Thank you,
-A concerned subscriber
+Description:
+We suspect unauthorized access to multiple employee accounts.

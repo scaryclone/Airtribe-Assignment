@@ -1,13 +1,4 @@
-Subject: Unable to log into my account
+Subject: Refund request
 
-Hi team,
-
-I've been trying to log into my account since this morning but it keeps
-saying "invalid credentials" even though I'm sure my password is correct.
-I tried resetting my password and never received the reset email either.
-This is blocking me from accessing my dashboard.
-
-Please help as soon as possible.
-
-Thanks,
-A frustrated customer
+Description:
+I was charged twice for my annual subscription and would like a refund.
