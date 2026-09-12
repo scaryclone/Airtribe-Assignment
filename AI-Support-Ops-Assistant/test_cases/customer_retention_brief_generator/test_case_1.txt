@@ -1,0 +1,7 @@
+Generate a retention briefing for the customer using the provided profile, billing, usage, and support data.
+
+Data sources:
+- knowledge/customer_profile.md
+- knowledge/billing_data.md
+- knowledge/usage_data.md
+- knowledge/support_history.md
