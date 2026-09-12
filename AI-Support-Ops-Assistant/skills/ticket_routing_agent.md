@@ -111,3 +111,5 @@ Escalation Status must be exactly one of:
 - No Escalation
 
 Actions Taken must contain operational actions only.
+
+For every decision, include the exact operational actions executed in the actions_taken field.
