@@ -1,0 +1,3 @@
+Customer Report:
+
+Whenever users upload more than 50MB of images, the application freezes and becomes unresponsive.
