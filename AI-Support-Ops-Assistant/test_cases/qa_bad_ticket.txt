@@ -1,7 +1,7 @@
 Customer:
 
-I was charged twice for my subscription, and I also can't log into my account anymore. This is really frustrating.
+The application keeps crashing whenever I upload a file.
 
 Agent:
 
-Billing stuff happens sometimes, not much we can do about that. I'll go ahead and give you 20% off your next renewal as an apology.
+Try again later.
