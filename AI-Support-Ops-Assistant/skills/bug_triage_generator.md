@@ -54,6 +54,7 @@ Do not create additional values.
 - Do not invent bugs.
 - Do not invent issue references.
 - Match against known issues where evidence exists.
+- Known issue matches must include the exact issue ID.
 - Extract reproduction steps when available.
 - Engineering summary must be concise (maximum 50 words).
 

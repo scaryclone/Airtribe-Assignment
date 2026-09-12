@@ -83,6 +83,7 @@ Assess whether:
 - Overall score must be the average of all category scores.
 - Strengths must reference observed behaviors.
 - Improvement areas must reference observed gaps.
+- Maximum 3 strengths and 3 improvement areas.
 - Do not invent missing context.
 - Return JSON only.
 
