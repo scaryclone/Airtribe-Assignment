@@ -1,4 +1,6 @@
-Subject: Can't reset my password
-
-Description:
-I've tried resetting my password three times but I never receive the reset email. Can you help me regain access to my account?
+{
+  "ticket_id": "TKT-101",
+  "category": "Billing",
+  "severity": "Medium",
+  "escalation_required": false
+}

@@ -1,4 +1,6 @@
-Subject: Suspicious account activity
-
-Description:
-I think my account has been hacked. There's a login from a location I don't recognize and some of my data settings have changed without my permission.
+{
+  "ticket_id": "TKT-205",
+  "category": "Security",
+  "severity": "Critical",
+  "escalation_required": true
+}
