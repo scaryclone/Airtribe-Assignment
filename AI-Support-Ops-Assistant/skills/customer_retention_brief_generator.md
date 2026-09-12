@@ -26,6 +26,7 @@ produce a retention brief.
 - Do not invent metrics.
 - Risk factors must be evidence-based.
 - For every risk factor, cite the supporting evidence from billing, usage, or support history.
+- Every positive signal must also reference supporting evidence from the provided data.
 - Talking points must be actionable.
 - Maximum 3 items per list.
 
@@ -55,7 +56,12 @@ Return ONLY valid JSON.
       "evidence": ""
     }
   ],
-  "positive_signals": [],
+  "positive_signals": [
+    {
+      "signal": "",
+      "evidence": ""
+    }
+  ],
   "recommended_talking_points": [],
   "renewal_risk": ""
 }
@@ -97,7 +103,14 @@ support_history.md: 5 tickets in last 30 days, 2 escalations, common complaints:
     }
   ],
   "positive_signals": [
-    "Enterprise customer since 2023 with $50,000 ARR"
+    {
+      "signal": "Long-term customer",
+      "evidence": "Customer since 2023"
+    },
+    {
+      "signal": "High-value contract",
+      "evidence": "Enterprise plan at $50,000 ARR"
+    }
   ],
   "recommended_talking_points": [
     "Present a resolution plan for the performance and export issues before discussing renewal",
