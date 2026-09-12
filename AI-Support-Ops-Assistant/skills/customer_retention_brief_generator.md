@@ -31,16 +31,22 @@ produce a retention brief.
 - Maximum 3 items per list.
 
 ## Health Score
-Choose one:
-- Healthy: No meaningful risk factors; usage and payment on track.
-- At Risk: One or more evidence-based risk factors present, but no immediate churn signal.
-- Critical: Multiple compounding risk factors (e.g., usage decline + billing issue + escalations) near a renewal date.
+Health Score must be exactly one of:
+
+- Healthy
+- Moderate Risk
+- At Risk
+
+Do not create additional values.
 
 ## Renewal Risk
-Choose one:
+Renewal Risk must be exactly one of:
+
 - Low
 - Medium
 - High
+
+Do not create additional values.
 
 ## Output Format
 
@@ -87,7 +93,7 @@ support_history.md: 5 tickets in last 30 days, 2 escalations, common complaints:
 ```json
 {
   "account_summary": "Acme Corp (Enterprise, $50,000 ARR, customer since 2023) renews in 30 days while showing declining engagement, a delayed payment, and repeated support escalations.",
-  "health_score": "Critical",
+  "health_score": "At Risk",
   "risk_factors": [
     {
       "risk": "Declining engagement",
