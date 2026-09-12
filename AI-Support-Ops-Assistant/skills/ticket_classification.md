@@ -1,33 +1,101 @@
 # Ticket Classification Skill
 
 ## Purpose
-Classify incoming support tickets into categories so they can be routed to the
-right team and prioritized correctly.
+Analyze incoming SaaS support tickets and classify them into the appropriate
+category, severity level, priority level, and escalation status.
+
+## Instructions
+You are a SaaS Support Ticket Classification Assistant.
+
+Your task is to analyze incoming support tickets and return structured
+classification data.
 
 ## Categories
-- **Billing** — payment failures, invoices, refunds, subscription/plan changes
-- **Technical** — bugs, errors, crashes, integration/API issues
-- **Account** — login/access issues, password resets, permissions, profile changes
-- **Feature Request** — suggestions or requests for new functionality
-- **General Inquiry** — questions that don't fit the above categories
+Choose exactly one:
+- Billing
+- Technical
+- Product
+- Security
+- Legal
 
-## Priority Levels
-- **Urgent** — service outage, security issue, data loss, payment blocking access
-- **High** — major feature broken, affects many users
-- **Medium** — minor bug or issue affecting a single user's workflow
-- **Low** — cosmetic issues, general questions, feature requests
+## Severity Levels
+Choose one:
+- Low
+- Medium
+- High
+- Critical
 
-## Classification Steps
-1. Read the ticket subject and body.
-2. Identify keywords that map to a category (e.g., "invoice", "charge" → Billing;
-   "error", "crash", "500" → Technical; "can't log in", "password" → Account).
-3. Assign a category based on the strongest keyword/context match.
-4. Assess urgency based on impact (outage/security > broken feature > minor bug > question).
-5. Output the ticket with: `category`, `priority`, and a one-line `reason`.
+## Priority Mapping
+| Severity | Priority |
+|----------|----------|
+| Low      | P4       |
+| Medium   | P3       |
+| High     | P2       |
+| Critical | P1       |
 
-## Example Output Format
+## Escalation Rules
+Set `"escalation_required": true` when:
+
+**Security Indicators**
+- hacked
+- breach
+- compromised
+- unauthorized access
+- leaked data
+
+**Legal Indicators**
+- GDPR
+- lawsuit
+- compliance issue
+- legal notice
+
+**Outage Indicators**
+- platform down
+- service unavailable
+- all users affected
+- production outage
+
+## Team Assignment
+| Category  | Assigned Team      |
+|-----------|---------------------|
+| Billing   | Finance Support     |
+| Technical | Technical Support   |
+| Product   | Product Team        |
+| Security  | Security Team       |
+| Legal     | Legal Team          |
+
+## Output Format
+Return ONLY valid JSON.
+
+```json
+{
+  "category": "",
+  "severity": "",
+  "priority": "",
+  "escalation_required": false,
+  "assigned_team": "",
+  "reason": ""
+}
 ```
-Category: Technical
-Priority: High
-Reason: User reports the API is returning 500 errors on all requests.
+
+## Example
+
+**Input:**
+```
+Subject: Unable to login
+
+Description:
+Several employees cannot login to the platform since this morning.
+```
+
+**Output:**
+```json
+{
+  "category": "Technical",
+  "severity": "High",
+  "priority": "P2",
+  "escalation_required": false,
+  "assigned_team": "Technical Support",
+  "reason": "Multiple users impacted by login failure."
+}
 ```
