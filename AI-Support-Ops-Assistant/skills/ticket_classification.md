@@ -77,6 +77,12 @@ Return ONLY valid JSON.
   "reason": ""
 }
 ```
+## Reason Guidelines
+
+- Provide a concise justification.
+- Maximum 20 words.
+- Focus only on the primary classification rationale.
+
 
 ## Example
 
