@@ -1,7 +1,13 @@
-Subject: Refund request
-
 Customer:
-I was charged twice for my annual subscription and would like a refund.
 
-Support Agent:
-Thanks for reaching out, and sorry for the inconvenience! I checked our billing system and confirmed you were charged twice for your annual subscription. Since this was within the last 30 days, you're eligible for a refund per our refund policy. I've submitted the refund for the duplicate charge now — you should see it back on your original payment method within a few business days. Is there anything else I can help you with?
+I was charged twice for my subscription.
+
+Agent:
+
+We apologize for the inconvenience.
+
+After reviewing your account, we identified a duplicate charge.
+
+A refund request has been submitted and should be processed within 5 business days.
+
+Please let us know if you need any additional assistance.
